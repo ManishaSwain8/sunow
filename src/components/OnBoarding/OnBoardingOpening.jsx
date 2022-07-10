@@ -1,7 +1,7 @@
 import React from "react";
 import musicList from "../../assets/images/new-listener.png";
 
-const OnBording = ({ show, setShow }) => {
+const OnBoardingOpening = ({ show, setShow }) => {
   return (
     <section className="relative h-[100vh]">
       <div>
@@ -10,7 +10,7 @@ const OnBording = ({ show, setShow }) => {
       {/* <div className="text-center">Login</div> */}
       <div className="px-8 py-16 absolute bottom-0 space-y-9  w-full rounded-t-3xl bg-white">
         <div className="text-center">
-          <h1 className="text-4xl font-semibold">
+          <h1>
             Listen the Best Music everyday with <span className="text-green-500">Sunow</span> now!
           </h1>
         </div>
@@ -22,4 +22,4 @@ const OnBording = ({ show, setShow }) => {
   );
 };
 
-export default OnBording;
+export default OnBoardingOpening;

@@ -23,7 +23,7 @@ const LoginButton = ({ item }) => (
   </button>
 );
 
-const Login = () => {
+export default function SignUp() {
   const [visible, setVisible] = useState(false);
   const [passwordVisible, setPasswordVisible] = useState("password");
   const email_icon = <AiOutlineMail />;
@@ -34,7 +34,7 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const navigateTo = () => navigate("/");
+  const navigateTo = () => navigate("/login");
 
   const isPasswordVisible = () => {
     setPasswordVisible(passwordVisible === "password" ? "text" : "password");
@@ -44,7 +44,7 @@ const Login = () => {
   const loginButton = openID.map((item, index) => <LoginButton item={item} key={index} />);
   return (
     <div className="text-center mx-6">
-      <h1>Login your Account</h1>
+      <h1>Create your Account</h1>
       <form method="post" className="space-y-3">
         <div className="relative">
           <span className="absolute top-4 left-4">{email_icon}</span>
@@ -59,7 +59,7 @@ const Login = () => {
         </div>
         <div>
           <button onClick={navigateTo} type="submit" className="flex bg-green-500 rounded-3xl justify-center items-center border-2 px-8 py-4 w-full text-white">
-            Sign in
+            Sign up
           </button>
           <span>Forgot the Password?</span>
         </div>
@@ -68,6 +68,4 @@ const Login = () => {
       <div className="flex justify-around">{loginButton}</div>
     </div>
   );
-};
-
-export default Login;
+}
