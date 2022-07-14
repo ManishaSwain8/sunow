@@ -43,29 +43,31 @@ export default function SignUp() {
 
   const loginButton = openID.map((item, index) => <LoginButton item={item} key={index} />);
   return (
-    <div className="text-center mx-6">
-      <h1>Create your Account</h1>
-      <form method="post" className="space-y-3">
-        <div className="relative">
-          <span className="absolute top-4 left-4">{email_icon}</span>
-          <input className="w-full px-9 py-3 bg-gray-100" type="email" placeholder="Email" />
-        </div>
-        <div className="relative">
-          <span className="absolute top-4 left-4">{password_icon}</span>
-          <input className="w-full px-9 py-3 bg-gray-100" type={passwordVisible} placeholder="Password" />
-          <button onClick={isPasswordVisible} className="absolute right-4 top-4">
-            {!visible ? <>{eye_invisible}</> : <>{eye_visible}</>}
-          </button>
-        </div>
-        <div>
-          <button onClick={navigateTo} type="submit" className="flex bg-green-500 rounded-3xl justify-center items-center border-2 px-8 py-4 w-full text-white">
-            Sign up
-          </button>
-          <span>Forgot the Password?</span>
-        </div>
-      </form>
+    <div className="text-center max-w-lg mx-auto mt-32 ">
+      <div className="mx-3 p-6 border rounded space-y-10">
+        <h1>Create your Account</h1>
+        <form onSubmit={(e) => e.preventDefault()} method="post" className="space-y-5">
+          <div className="relative">
+            <span className="absolute top-4 left-4">{email_icon}</span>
+            <input className="w-full px-9 py-3 bg-gray-100" type="email" placeholder="Email" />
+          </div>
+          <div className="relative">
+            <span className="absolute top-4 left-4">{password_icon}</span>
+            <input className="w-full px-9 py-3 bg-gray-100" type={passwordVisible} placeholder="Password" />
+            <button onClick={isPasswordVisible} className="absolute right-4 top-4">
+              {!visible ? <>{eye_invisible}</> : <>{eye_visible}</>}
+            </button>
+          </div>
+          <div>
+            <button onClick={navigateTo} type="submit" className="flex bg-green-500 rounded-3xl justify-center items-center px-8 py-4 w-full text-white">
+              Sign up
+            </button>
+            <span className="text-blue-500">Forgot the Password?</span>
+          </div>
+        </form>
 
-      <div className="flex justify-around">{loginButton}</div>
+        <div className="flex justify-around">{loginButton}</div>
+      </div>
     </div>
   );
 }
