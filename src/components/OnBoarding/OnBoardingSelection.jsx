@@ -18,9 +18,10 @@ const OnBoardingSelection = ({ setShow, show }) => {
 
   const navigateToLogin = () => navigate("/login");
   const loginButton = openID.map((item, index) => <LoginButton item={item} key={index} />);
+
   return (
     <>
-      <button className="" onClick={() => setShow(!show)}>
+      <button onClick={() => setShow(!show)}>
         <BsArrowLeft size={42} className="text-left" />
       </button>
       <div className="text-center mx-8 space-y-10">
