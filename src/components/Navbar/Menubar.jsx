@@ -10,12 +10,12 @@ export default function Menubar() {
             <b>MENU</b>
           </div>
           <br />
-          {Menubardata.map((val, key) => {
+          {Menubardata.map((val, keyz) => {
             return (
-              <div>
-                <li key={key} className="menulist">
-                  <div id="icon">{val.icon}</div>
-                  <div id="title">{val.title}</div>
+              <div key={keyz} >
+                <li  className="menulist">
+                  <div id="icons">{val.icons}</div>
+                  <div id="titles">{val.titles}</div>
                 </li>
               </div>
             );
