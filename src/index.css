@@ -51,6 +51,9 @@ body{
     margin-left:11%;
     margin-top: 2.5rem;
 }
+/*.logo:hover{
+    transform: scale(1.1);
+}*/
 
 .Menubar{
    position: fixed;
@@ -76,7 +79,7 @@ body{
 }
 .menulist:hover{
     cursor: pointer;
-    
+    /*transform: scale(1.05);*/
     color: rgb(220, 143, 0);
 }
 .menulist #icons{
@@ -125,7 +128,7 @@ place-items: center;
      }
      .glist:hover{
          cursor: pointer;
-         
+         /*transform: scale(1.05);*/
          color: rgb(220, 143, 0);
      }
      .glist #icon{
@@ -143,7 +146,7 @@ place-items: center;
  
     .fname{
         margin-left: 9%;
-        margin-top: 50rem;
+        margin-top: 47rem;
         font-size: 1.0rem;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
