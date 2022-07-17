@@ -8,33 +8,33 @@ import PersonIcon from "@mui/icons-material/Person";
 // import FiberNewIcon from '@mui/icons-material/FiberNew';
 export const Menubardata = [
   {
-    title: "Home",
-    icon: <HomeIcon />,
+    titles: "Home",
+    icons: <HomeIcon />,
     Link: "/home",
   },
   {
-    title: "Search",
-    icon: <SearchIcon />,
+    titles: "Search",
+    icons: <SearchIcon />,
     Link: "/search",
   },
   {
-    title: "Likes",
-    icon: <FavoriteIcon />,
+    titles: "Likes",
+    icons: <FavoriteIcon />,
     Link: "/like",
   },
   {
-    title: "Playlist",
-    icon: <ListIcon />,
+    titles: "Playlist",
+    icons: <ListIcon />,
     Link: "/playlist",
   },
   {
-    title: "Album",
-    icon: <AlbumIcon />,
+    titles: "Album",
+    icons: <AlbumIcon />,
     Link: "/album",
   },
   {
-    title: "Following",
-    icon: <PersonIcon />,
+    titles: "Following",
+    icons: <PersonIcon />,
     Link: "/following",
   },
 ];

@@ -9,7 +9,7 @@ export default function Footer() {
       <br />
       <img src="./imagespub/app1.png" className="flogo" alt="app1" />
       <img src="./imagespub/gog.png" className="flogo1" alt="app2" />
-      <p>Legal-Privacy-Cookie Policy-Cookie Blog Manage-Imprint Resource Chart Language English(US)</p>
+      <p className="fpara">Legal-Privacy-Cookie Policy-Cookie Blog Manage-Imprint Resource Chart Language English(US)</p>
     </div>
   );
 }
