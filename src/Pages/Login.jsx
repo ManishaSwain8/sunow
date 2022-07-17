@@ -7,6 +7,8 @@ import { AiFillLock } from "react-icons/ai";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 
+import { AiFillHome } from "react-icons/ai";
+
 import { FcGoogle } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
 import { AiFillApple } from "react-icons/ai";
@@ -44,6 +46,7 @@ const Login = () => {
   const loginButton = openID.map((item, index) => <LoginButton item={item} key={index} />);
   return (
     <div className="text-center max-w-lg mx-auto mt-32 ">
+      <AiFillHome />
       <div className="space-y-10 border rounded m-3 p-6">
         <h1>Login your Account</h1>
         <form onSubmit={(e) => e.preventDefault()} method="post" className="space-y-5">
