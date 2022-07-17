@@ -24,11 +24,16 @@ code {
 
 
 /*NAVBAR CSS*/
+html{
+    font-size: 62.5%;
+    
+}
 .Navbar{
     background-color: rgb(224, 223, 239);
     position: fixed;
-      width:280px;
+      width:28rem;
       height:100%;
+
       
 }
 body{
@@ -37,23 +42,26 @@ body{
 }
 .logoname{
     float: left;
-    padding:15px;
+    padding:1.5rem;
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 16px;
 }
 .logo{
-    background-color:white;
-    height: 40px;
-    width: 40px;
+  
+    height: 3rem;
+    width: 3rem;
     float:left;
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 3.0rem;
+    margin-top: 2.0rem;
 }
 
 .Menubar{
    position: fixed;
-      width:280px;
+      width:28rem;
       height:100%;
-      margin-top: 100px;
-      margin-left: 10px;
+      margin-top: 10rem;
+      margin-left: 1rem;
       
     }  
 .Menubarlist{
@@ -62,12 +70,12 @@ body{
 }
 .menulist{
     width: 100%;
-    height: 50px;
+    height: 5.0rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+    font-size: 1.6rem;
     
 }
 .menulist:hover{
@@ -84,22 +92,22 @@ place-items: center;
     flex:80%;
     }
 .menuname{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 15%;
+    margin-left: 6%;
 }
 .gname{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 15%;
+    margin-left: 6%;
 }
     .General{
    
         position: fixed;
-           width:280px;
+           width:28rem;
            height:100%;
-           margin-top: 480px;
-           
+           margin-top: 48rem;
+           margin-left: 1rem;
          }  
      .generalist{
          height: auto;
@@ -108,12 +116,13 @@ place-items: center;
      }
      .glist{
          width: 100%;
-         height: 50px;
+         height: 5.0rem;
          margin: 0%;
          display: flex;
          flex-direction: row;
          justify-content: center;
          align-items: center;
+         font-size: 1.6rem;
          
      }
      .glist:hover{
@@ -129,46 +138,78 @@ place-items: center;
     .glist #title{
          flex:80%;
          }
-   
+         .footer{
+          position: relative;
+          bottom: 0rem;
+         }
+ 
+    .fname{
+        margin-left: 8%;
+        margin-top: 78rem;
+        font-size: 1.6rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
      .flogo{
-        float: left;
+        margin-left:1rem;
+        width: 13rem;
+        height: 13rem;
+        position: relative;
+        bottom: 4rem;
         
-        height: 50px;
-        margin-left: 10px;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 130px;
-        height: 130px;
-        margin-bottom: 75px;
-        overflow: hidden;
-     }
+     } 
      .flogo1{
-        float: left;
-        margin-bottom: 60px;
-        margin-left: 45%;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 160px;
-        height: 160px;
+        margin-left:12rem;
+        width: 17rem;
+        height: 16.5rem;
+        position: relative;
+        bottom: 18.5rem;
         
-        overflow: hidden;
+     }
+     p{
+        margin-left: 1rem;
+        font-size: 12px;
+        position: relative;
+        bottom: 24rem;
+        
+    }
+     /*
+     .flogo1{
+        
+        float: left;
+        margin-bottom: 40rem;
+        margin-left: 45%;
+        position: relative;
+        bottom: 0rem;
+        left: 0rem;
+        width: 16rem;
+        height: 16rem;
+        top:55.5rem;
+        
      }
      .fname{
         float: left;
-        margin-bottom:180px;
-        margin-left: 15%;
-        bottom: 0px;
-        left: 0px;
-        position: absolute;
-        font-size: 16px;
+        margin-left:0rem;
+        bottom: 0rem;
+        left: 0rem;
+        position:relative;
+        top:68rem;
+        font-size: 1.6rem;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     p{
         margin-left: 6%;
-        bottom:0px;
-        margin-bottom: 40px;
-        position: absolute;
+        bottom:0rem;
+        margin-bottom: 4.0rem;
+        position: relative;
+    }*/
+    @media(max-width:99.8rem){
+        html{
+            font-size: 55%;
+        }
+    }
+    @media(max-width:76.8rem){
+        html{
+            font-size: 45%;
+        }
     }
 
