@@ -10,10 +10,10 @@ export default function General() {
             <b>GENERAL</b>
           </div>
           <br />
-          {Generaldata.map((val, key) => {
+          {Generaldata.map((val, i) => {
             return (
-              <div>
-                <li key={key} className="glist">
+              <div key={i} >
+                <li className="glist">
                   <div id="icon">{val.icon}</div>
                   <div id="title">{val.title}</div>
                 </li>
