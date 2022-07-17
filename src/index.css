@@ -27,31 +27,12 @@ code {
 } */
 
 /*NAVBAR CSS*/
+html {
+  /* font-size: 62.5%; */
+}
 .Navbar {
   background-color: rgb(224, 223, 239);
   /* position: fixed; */
-  width: 280px;
-  height: 100%;
-}
-
-.logoname {
-  float: left;
-  padding: 15px;
-}
-.logo {
-  background-color: white;
-  height: 40px;
-  width: 40px;
-  float: left;
-  margin-left: 30px;
-  margin-top: 20px;
-}
-html {
-  font-size: 62.5%;
-}
-.Navbar {
-  background-color: rgb(224, 223, 239);
-  position: fixed;
   width: 28rem;
   height: 100%;
 }
@@ -61,7 +42,7 @@ body {
 .logoname {
   float: left;
   padding: 1.5rem;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin-top: 16px;
 }
@@ -91,7 +72,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
 }
 .menulist:hover {
   cursor: pointer;
@@ -107,12 +88,12 @@ body {
   flex: 80%;
 }
 .menuname {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin-left: 6%;
 }
 .gname {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin-left: 6%;
 }
@@ -136,7 +117,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
 }
 .glist:hover {
   cursor: pointer;
@@ -159,7 +140,7 @@ body {
 .fname {
   margin-left: 8%;
   margin-top: 78rem;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .flogo {
@@ -176,12 +157,12 @@ body {
   position: relative;
   bottom: 18.5rem;
 }
-p {
+/* p {
   margin-left: 1rem;
   font-size: 12px;
   position: relative;
   bottom: 24rem;
-}
+} */
 /*
      .flogo1{
         
@@ -214,131 +195,11 @@ p {
     }*/
 @media (max-width: 99.8rem) {
   html {
-    font-size: 55%;
+    /* font-size: 55%; */
   }
 }
 @media (max-width: 76.8rem) {
   html {
-    font-size: 45%;
+    /* font-size: 45%; */
   }
 }
-
-.Menubar {
-  position: fixed;
-  width: 280px;
-  height: 100%;
-  margin-top: 100px;
-  margin-left: 10px;
-}
-.Menubarlist {
-  height: auto;
-  width: 100%;
-}
-.menulist {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.menulist:hover {
-  cursor: pointer;
-
-  color: rgb(220, 143, 0);
-}
-.menulist #icon {
-  flex: 20%;
-  display: grid;
-  place-items: center;
-}
-.menulist #title {
-  flex: 80%;
-}
-.menuname {
-  font-size: 16px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  margin-left: 15%;
-}
-.gname {
-  font-size: 16px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  margin-left: 15%;
-}
-.General {
-  position: fixed;
-  width: 280px;
-  height: 100%;
-  margin-top: 480px;
-}
-.generalist {
-  height: auto;
-
-  width: 100%;
-}
-.glist {
-  width: 100%;
-  height: 50px;
-  margin: 0%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.glist:hover {
-  cursor: pointer;
-
-  color: rgb(220, 143, 0);
-}
-.glist #icon {
-  flex: 20%;
-  display: grid;
-  place-items: center;
-}
-.glist #title {
-  flex: 80%;
-}
-
-.flogo {
-  float: left;
-
-  height: 50px;
-  margin-left: 10px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 130px;
-  height: 130px;
-  margin-bottom: 75px;
-  overflow: hidden;
-}
-.flogo1 {
-  float: left;
-  margin-bottom: 60px;
-  margin-left: 45%;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 160px;
-  height: 160px;
-
-  overflow: hidden;
-}
-.fname {
-  float: left;
-  margin-bottom: 180px;
-  margin-left: 15%;
-  bottom: 0px;
-  left: 0px;
-  position: absolute;
-  font-size: 16px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-/* FIXME: use spectific class-name or id instead tags  */
-/* p {
-  margin-left: 6%;
-  bottom: 0px;
-  margin-bottom: 40px;
-  position: absolute;
-} */

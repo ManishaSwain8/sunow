@@ -4,7 +4,7 @@ import { FaLessThan } from "react-icons/fa";
 
 export default function Chart() {
   return (
-    <div id="chart" className="space-y-2 p-6 w-full bg-white rounded-xl lg:absolute lg:left-8">
+    <div id="chart" className="space-y-2 p-5 w-full bg-white rounded-xl lg:absolute lg:left-8">
       <div className="flex justify-between">
         <p>Chart: Top 50</p>
         <div className="flex justify-between items-center w-16 lg:mr-24">
