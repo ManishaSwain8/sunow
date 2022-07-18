@@ -9,14 +9,14 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <section className="bg-[#F4F5F7] h-[100vh] flex">
+      <section className="bg-[#F4F5F7] flex">
         <div className="Navbar">
           <Menubar />
           <Logobar />
           <General />
           <Footer />
         </div>
-        <div className="w-[80%]">
+        <div className="w-[80%] ">
           <Main />
         </div>
       </section>
