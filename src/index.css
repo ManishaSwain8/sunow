@@ -8,10 +8,16 @@
     font-family: "Roboto", sans-serif;
   }
   h1 {
-    @apply text-4xl font-semibold;
+    @apply 2xl:text-4xl xl:text-3xl lg:text-2xl sm:text-xl text-xs font-semibold;
   }
   h2 {
     @apply text-xl;
+  }
+  h4 {
+    @apply 2xl:text-xl xl:text-xl text-xs;
+  }
+  p {
+    @apply xl:text-lg md:text-base text-xs;
   }
 }
 

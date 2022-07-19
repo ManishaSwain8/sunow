@@ -22,9 +22,10 @@ const FloatIcon = () => (
 const ListeningHistory = () => {
   return (
     // md:max-w-[65%]
-    <div className=" md:grow-[2] w-full bg-[#FDFDFD] rounded-3xl overflow-hidden items-stretch shadow-sm relative ">
+
+    <div className="md:w-[80%] md:basis-[70%] basis-full bg-[#FDFDFD] rounded-3xl overflow-hidden max-h-[500px] items-stretch shadow-sm relative ">
       <div className="flex justify-between p-5 shadow-xl shadow-slate-100">
-        <p>Listening History</p>
+        <h1>Listening History</h1>
         <p className="text-gray-400 text-sm">See All</p>
       </div>
       <div className="overflow-y-auto max-h-96">
