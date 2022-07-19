@@ -96,6 +96,96 @@ body {
 }
 .generalist {
   height: auto;
+}
+.Navbar {
+  background-color: rgb(224, 223, 239);
+
+  width: 21rem;
+  height: 100%;
+}
+.glist {
+  width: 100%;
+  height: 3rem;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.logoname {
+  margin-left: 6rem;
+  position: absolute;
+  top: 2.5rem;
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+  color: rgb(240, 128, 7);
+}
+.logo {
+  height: 2.2rem;
+  width: 2.2rem;
+  position: absolute;
+  top: 2.3rem;
+  margin-left: 2.4rem;
+  transition: transform 0.7s ease-in-out;
+}
+.logo:hover {
+  /*transform: scale(1.1);*/
+  transform: rotate(360deg);
+}
+
+.Menubar {
+  width: 21rem;
+  height: 100%;
+  margin-top: 7rem;
+  margin-left: 1rem;
+}
+.Menubarlist {
+  height: auto;
+  width: 100%;
+}
+.flogo {
+  margin-left: 1rem;
+  width: 9rem;
+  height: 8rem;
+  position: relative;
+  bottom: 4rem;
+}
+.flogo1 {
+  margin-left: 8.5rem;
+  width: 12rem;
+  height: 10rem;
+  position: relative;
+  bottom: 13rem;
+}
+.fpara {
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 16rem;
+}
+.menulist #titles {
+  flex: 80%;
+}
+.menuname {
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-left: 6%;
+}
+.gname {
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-left: 6%;
+}
+.General {
+  width: 21rem;
+  height: 100%;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+.generalist {
+  height: auto;
 
   width: 100%;
 }
@@ -129,7 +219,7 @@ body {
 
 .fname {
   margin-left: 9%;
-  margin-top: 47rem;
+  margin-top: 2.5rem;
   font-size: 1rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -183,13 +273,13 @@ body {
         margin-bottom: 4.0rem;
         position: relative;
     }*/
-@media (max-width: 99.8rem) {
-  .Navbar {
-    font-size: 55%;
-  }
-}
-@media (max-width: 76.8rem) {
-  .Navbar {
-    font-size: 45%;
-  }
-}
+/* @media(max-width:99.8rem){
+        html{
+            font-size: 55%;
+        }
+    }
+    @media(max-width:76.8rem){
+        html{
+            font-size: 45%;
+        }
+    }*/
