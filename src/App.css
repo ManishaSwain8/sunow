@@ -9,6 +9,13 @@
   scrollbar-width: none; /* Firefox */
 }
 
+#box {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  margin-top: 2px;
+}
+
 .App {
   text-align: center;
 }

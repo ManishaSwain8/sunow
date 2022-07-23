@@ -10,7 +10,7 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <section className="container ml-auto">
+      <section className=" bg-[#F6F7FE]">
         {/* <div className="Navbar">
           <Menubar />
           <Logobar />
