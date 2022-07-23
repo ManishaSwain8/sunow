@@ -1,10 +1,18 @@
-import React from "react"
+import React from "react";
 import image from "../../assets/images/logo.svg";
-export default function Logobar(){
-    return(
-    <header className="logobar">
+// import ToggleOnIcon from "@mui/icons-material/ToggleOn";
+export default function Logobar() {
+  return (
+    <div>
+      <header className="logobar">
         <img src={image} className="logo" alt="error"></img>
-        <h2 className="logoname"><b>Sunow</b></h2>
-        
-    </header>)
+        <h2 className="logoname">
+          <b>Sunow</b>
+        </h2>
+      </header>
+      {/* <Dark_switch className="switch">
+        <ToggleOnIcon />
+      </Dark_switch> */}
+    </div>
+  );
 }
