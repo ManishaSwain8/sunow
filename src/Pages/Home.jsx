@@ -5,6 +5,7 @@ import General from "../components/Navbar/General";
 import Footer from "../components/Navbar/Footer";
 import Main from "../components/Home/Main";
 import "./Home.css";
+import TopNavbar from "../components/Home/TopNavbar";
 
 export default function Home() {
   return (
@@ -16,9 +17,8 @@ export default function Home() {
           <General />
           <Footer />
         </div> */}
-        <div className="container mx-auto min-h-screen p-3">
-          <Main />
-        </div>
+
+        <Main />
       </section>
     </>
   );

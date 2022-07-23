@@ -23,12 +23,13 @@ const ListeningHistory = () => {
   return (
     // md:max-w-[65%]
 
-    <div className="md:w-[80%] md:basis-[70%] basis-full bg-[#FDFDFD] rounded-3xl overflow-hidden max-h-[500px] items-stretch shadow-sm relative ">
+    <div className=" basis-full bg-[#FDFDFD] rounded-3xl overflow-hidden  items-stretch shadow-sm relative ">
       <div className="flex justify-between p-5 shadow-xl shadow-slate-100">
         <h1>Listening History</h1>
         <p className="text-gray-400 text-sm">See All</p>
       </div>
-      <div className="overflow-y-auto max-h-96">
+      {/* max-h-[calc(100%-100px)] */}
+      <div className="overflow-y-auto h-1/2">
         <div className="pt-16 pb-24 flex flex-col gap-16 ">
           {/* playLsit */}
           <MusicList />
