@@ -8,13 +8,13 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <section className="bg-[#F4F5F7] h-[100vh] flex">
-        <div className="Navbar z-10">
+      <section className="bg-[#F4F5F7] flex">
+        <div className="Navbar">
           <Menubar />
           <Logobar />
           <General />
         </div>
-        <div className="w-[80%] sm:ml-auto mx-auto">
+        <div className="w-[80%] ">
           <Main />
         </div>
       </section>

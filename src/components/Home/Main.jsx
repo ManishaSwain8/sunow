@@ -5,7 +5,9 @@ import RecentPlay from "./RecentPlay";
 
 export default function Main() {
   return (
-    <div className="sm:px-8 p-3 md:overflow-hidden w-full relative space-y-3 h-full">
+    // FIXME: Change height not in screen size 100vh !!!
+    <div className="sm:px-8 p-3 md:overflow-hidden w-full  relative space-y-3 h-full">
+      {/* Sreen HEad */}
       <div className="flex justify-between items-center">
         <p className="text-2xl font-bold">
           Discover <span>{">"}</span> <span className="text-gray-400">Recently Played</span>
@@ -25,17 +27,15 @@ export default function Main() {
       </div>
 
       {/* Chart */}
-      <div className="h-[280px] sm:w-full">
+      <div className="min-h-[280px] sm:w-full">
         <Chart />
       </div>
+
       {/* Listening History */}
-      {/* TODO: ADD new Recents Play */}
-      <div className="flex gap-10">
+      <div className="flex gap-10 relative border-2 ">
         <ListeningHistory />
         <RecentPlay />
       </div>
-
-      {/* Recently Played */}
     </div>
   );
 }

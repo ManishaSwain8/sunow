@@ -5,7 +5,7 @@ import { AiFillMessage } from "react-icons/ai";
 import { BsHeartHalf } from "react-icons/bs";
 
 const FloatIcon = () => (
-  <div className="text-sm flex gap-5 absolute -top-5 right-10">
+  <div className="text-sm   flex gap-5 absolute -top-5 right-10">
     <div className="flex items-center p-2 bg-white shadow-xl shadow-slate-200 rounded-xl">
       <BsFillPlayFill size={24} />
       120k
@@ -22,7 +22,7 @@ const FloatIcon = () => (
 const ListeningHistory = () => {
   return (
     // md:max-w-[65%]
-    <div className=" md:grow-[2] w-full bg-[#FDFDFD] rounded-3xl overflow-hidden h-[55%] shadow-sm  relative">
+    <div className=" md:grow-[2] w-full bg-[#FDFDFD] rounded-3xl overflow-hidden items-stretch shadow-sm relative ">
       <div className="flex justify-between p-5 shadow-xl shadow-slate-100">
         <p>Listening History</p>
         <p className="text-gray-400 text-sm">See All</p>
