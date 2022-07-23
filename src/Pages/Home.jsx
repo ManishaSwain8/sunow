@@ -10,7 +10,7 @@ import TopNavbar from "../components/Home/TopNavbar";
 export default function Home() {
   return (
     <>
-      <section className="bg-[#F4F5F7] flex">
+      <section className="">
         {/* <div className="Navbar">
           <Menubar />
           <Logobar />
