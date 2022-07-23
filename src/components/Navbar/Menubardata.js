@@ -5,7 +5,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ListIcon from "@mui/icons-material/List";
 import AlbumIcon from "@mui/icons-material/Album";
 import PersonIcon from "@mui/icons-material/Person";
-// import FiberNewIcon from '@mui/icons-material/FiberNew';
+import FiberNewIcon from "@mui/icons-material/FiberNew";
+
 export const Menubardata = [
   {
     titles: "Home",

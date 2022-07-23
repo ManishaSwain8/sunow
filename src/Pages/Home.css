@@ -9,3 +9,195 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/*Overal css of navbar*/
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+}
+.Navbar {
+  background-color: rgb(226, 226, 242);
+  height: 100vh;
+  position: absolute;
+  transition: 0.5s;
+  overflow: hidden;
+  width: 5rem;
+  /*left:-30%;*/
+  left: 0;
+}
+.Navbar:hover {
+  width: 21rem;
+  transition: all 0.5s ease;
+}
+.logobar {
+  display: flex;
+}
+.logoname {
+  column-gap: 2rem;
+  position: absolute;
+  top: 1.7rem;
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 6rem;
+  color: rgb(240, 128, 7);
+}
+.logo {
+  height: 2.2rem;
+  width: 2.2rem;
+  position: absolute;
+  top: 1.5rem;
+  margin-left: 1.4rem;
+  transition: transform 0.7s ease-in-out;
+}
+
+.logo:hover {
+  /*transform: scale(1.1);*/
+  transform: rotate(360deg);
+}
+
+.Menubar {
+  width: 19.5rem;
+  height: 100%;
+  margin-top: 7rem;
+  margin-left: 1rem;
+}
+.Menubarlist {
+  height: auto;
+  width: 100%;
+}
+.menulist {
+  column-gap: 2rem;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.menulist:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: rgb(255, 128, 0);
+  background: rgb(218, 218, 235);
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.menulist #icons {
+  flex: 20%;
+  display: grid;
+  place-items: center;
+}
+.menulist #titles {
+  flex: 80%;
+}
+.menuname {
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 6%;
+  margin-left: 0rem;
+}
+.gname {
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 6%;
+  margin-left: 0rem;
+}
+.General {
+  width: 19.5rem;
+  height: 100%;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+.generalist {
+  height: auto;
+
+  width: 100%;
+}
+.glist {
+  column-gap: 2rem;
+  width: 100%;
+  height: 3rem;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.glist:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: rgb(255, 128, 0);
+  background: rgb(218, 218, 235);
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.glist #icon {
+  flex: 20%;
+  display: grid;
+  place-items: center;
+}
+.glist #title {
+  flex: 80%;
+}
+.switch {
+  position: absolute;
+  bottom: 0%;
+}
+
+@media only screen and (max-width: 600px) {
+  .logoname,
+  #titles,
+  #title {
+    display: none;
+  }
+
+  .Navbar {
+    background-color: rgb(226, 226, 242);
+    width: 100%;
+    /*left:-30%;*/
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+  }
+  .menuflex {
+    position: absolute;
+    top: 1rem;
+    justify-content: space-around;
+    width: auto;
+    display: flex;
+    margin-left: 5rem;
+    column-gap: 1.5rem;
+  }
+  .menuflex1 {
+    position: absolute;
+    top: 1rem;
+    justify-content: space-around;
+    width: auto;
+    display: flex;
+    margin-left: 23rem;
+    column-gap: 1.5rem;
+  }
+
+  #icons:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: rgb(255, 128, 0);
+    background: rgb(218, 218, 235);
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  #icon:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: rgb(255, 128, 0);
+    background: rgb(218, 218, 235);
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  .Navbar:hover {
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+}

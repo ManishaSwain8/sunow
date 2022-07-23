@@ -2,10 +2,9 @@ import React from "react";
 import Logobar from "../components/Navbar/Logobar";
 import Menubar from "../components/Navbar/Menubar";
 import General from "../components/Navbar/General";
-import Footer from "../components/Navbar/Footer";
+// import Footer from "../components/Navbar/Footer";
 import Main from "../components/Home/Main";
 import "./Home.css";
-
 export default function Home() {
   return (
     <>
@@ -14,7 +13,6 @@ export default function Home() {
           <Menubar />
           <Logobar />
           <General />
-          <Footer />
         </div>
         <div className="w-[80%] ">
           <Main />

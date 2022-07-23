@@ -14,6 +14,8 @@
     @apply text-xl;
   }
 }
+<<<<<<< HEAD
+=======
 
 .Navbar {
   background-color: rgb(224, 223, 239);
@@ -283,3 +285,4 @@ body {
             font-size: 45%;
         }
     }*/
+>>>>>>> d3948564cb91fc79149761a1603b842f708a13ae
