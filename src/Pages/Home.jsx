@@ -14,9 +14,9 @@ export default function Home() {
           <Logobar />
           <General />
         </div>
-        <div className="w-[80%] ">
+        {/* <div className="w-[80%] ">
           <Main />
-        </div>
+        </div> */}
       </section>
     </>
   );
