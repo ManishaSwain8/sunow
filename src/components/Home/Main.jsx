@@ -37,10 +37,10 @@ export default function Main() {
 
       <div className="">
         {/*  */}
-        <section id="player-list" className="lg:flex h-screen justify-evenly">
+        <section id="player-list" className="lg:flex h-screen justify-between">
           {/* main Screen */}
-          <div className="space-y-2 basis-[70%] flex-none shrink-1 grow-1 overflow-y-scroll">
-            <div className="max-h-fit  py-6">
+          <div className="space-y-2 xl:basis-[70%] basis-[65%] flex-none shrink-1 grow-1 overflow-y-scroll">
+            <div className="max-h-fit  p-6">
               <h2 className="">Most Populor</h2>
               <div className="" id="albumn">
                 <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">{overflowXScroll}</div>
@@ -62,27 +62,12 @@ export default function Main() {
             </div>
           </div>
           {/* Player Screen */}
-          <div class="basis-full shrink-1 grow-1 lg:block hidden relative h-screen p-12">
-            <div id="recent-player" class="bg-blue-400  mx-auto max-w-xl min-w-[320px] aspect-[1/1.2] rounded-lg"></div>
-            {/* <div id="recent-player" class="bg-blue-200 max-w-xs min-h-[200px] h-screen-length overflow-y-scroll">
+          <div class="basis-full shrink-1 grow-1 lg:block hidden relative h-screen px-6 py-12 overflow-hidden">
+            <div id="recent-player" class="bg-blue-400 mx-auto max-w-xl min-w-[300px] aspect-[1/1.2] rounded-lg"></div>
+            <div id="recent-player" class="bg-blue-200 mx-auto max-w-xl min-w-[300px] aspect-[1/1.2] h-screen-length overflow-y-scroll">
               <div id="box"></div>
               <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-              <div id="box"></div>
-            </div> */}
+            </div>
           </div>
           <div class="bg-gray-800 w-full h-16 lg:hidden fixed bottom-0"></div>
         </section>
