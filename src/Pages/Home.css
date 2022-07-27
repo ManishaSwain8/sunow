@@ -150,6 +150,7 @@
 
 @media only screen and (max-width: 600px) {
   .logoname,
+  .logo,
   #titles,
   #title {
     display: none;
@@ -167,35 +168,18 @@
     position: absolute;
     top: 1rem;
     justify-content: space-around;
-    width: auto;
+    width: 100%;
     display: flex;
-    margin-left: 5rem;
-    column-gap: 1.5rem;
-  }
-  .menuflex1 {
-    position: absolute;
-    top: 1rem;
-    justify-content: space-around;
-    width: auto;
-    display: flex;
-    margin-left: 23rem;
-    column-gap: 1.5rem;
   }
 
   #icons:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.4);
     color: rgb(255, 128, 0);
     background: rgb(218, 218, 235);
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
   }
-  #icon:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    color: rgb(255, 128, 0);
-    background: rgb(218, 218, 235);
-    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-  }
+
   .Navbar:hover {
     width: 100%;
     transition: all 0.5s ease;
