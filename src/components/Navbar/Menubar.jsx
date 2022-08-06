@@ -14,7 +14,7 @@ export default function Menubar() {
             {Menubardata.map((val, keyz) => {
               return (
                 <div key={keyz}>
-                  <li className="menulist">
+                  <li className="menulist" id="for_hover_mobile">
                     <div id="icons">{val.icons}</div>
                     <div id="titles">{val.titles}</div>
                   </li>
