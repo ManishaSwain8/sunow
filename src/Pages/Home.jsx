@@ -10,18 +10,17 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 export default function Home() {
   return (
-    <section className="bg-[#F4F5F7] flex">
-      <div className="Navbar">
-        <Menubar />
-        <Logobar />
-        <General />
+    <>
+      <section className="bg-[#F4F5F7] flex">
+        <div className="Navbar">
+          <Menubar />
+          <Logobar />
+          <General />
+        </div>
+      </section>
+      <div className="bg-[#F6F7FE] sm:ml-20">
+        <Main />
       </div>
-      <div className="w-[80%] ">
-        <Link to="/Explore">
-          <Explore />
-        </Link>
-        {/* <Main /> */}
-      </div>
-    </section>
+    </>
   );
 }

@@ -4,15 +4,15 @@ import { FaLessThan } from "react-icons/fa";
 
 export default function Chart() {
   return (
-    <div id="chart" className="space-y-2 p-5 w-full bg-white rounded-xl lg:absolute lg:left-8">
+    <div id="chart" className="p-5 bg-white rounded-xl lg:h-full">
       <div className="flex justify-between">
-        <p>Chart: Top 50</p>
+        <h1>Chart: Top 50</h1>
         <div className="flex justify-between items-center w-16 lg:mr-24">
           <FaLessThan />
           <FaGreaterThan />
         </div>
       </div>
-      <div id="chartBox" className="flex gap-20 justify-between items-center overflow-x-scroll px-1 py-3">
+      <div id="chartBox" className="flex gap-20 justify-between items-center overflow-x-scroll px-1 py-3 h-full">
         {/* box */}
         <Top50Box />
         <Top50Box />
@@ -36,9 +36,9 @@ export default function Chart() {
 
 const Top50Box = () => {
   return (
-    <div className="max-w-fit basis-40 shrink-0 grow-0 p-4 space-y-1 font-light text-xs border-2 rounded-md border-orange-200 hover:shadow-md shadow-slate-300">
+    <div className="basis-32 md:basis-40 shrink-0 grow-1 p-4 space-y-1 font-light text-xs border-2 rounded-md border-orange-200 hover:shadow-md shadow-slate-300">
       <div>
-        <img src="http://filmmusicreporter.com/wp-content/uploads/2018/05/mosaic.jpg" alt="albumImage" width={100} className="rounded-xl " />
+        <img src="http://filmmusicreporter.com/wp-content/uploads/2018/05/mosaic.jpg" alt="albumImage" className="rounded-xl w-full" />
       </div>
       <p>Al Music Genre</p>
       <p className="text-xs text-gray-400">Top 50</p>
