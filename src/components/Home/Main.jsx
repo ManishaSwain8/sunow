@@ -47,27 +47,27 @@ export default function Main() {
                 <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">{overflowXScroll}</div>
               </div>
             </div>
-
+            {/* 
             <div className="max-h-fit mt-20 p-6">
               <h2 className="">Most Populor</h2>
               <div className="" id="albumn">
                 <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">{overflowXScroll}</div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="max-h-fit  p-6">
+            {/* <div className="max-h-fit  p-6">
               <h2 className="">Most Populor</h2>
               <div className="" id="albumn">
                 <div className=" snap-x flex xl:gap-20 lg:gap-16  gap-10  items-center overflow-x-scroll">{overflowXScroll}</div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="max-h-fit  p-6">
+            {/* <div className="max-h-fit  p-6">
               <h2 className="">Most Populor</h2>
               <div className="" id="albumn">
                 <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10  items-center overflow-x-scroll">{overflowXScroll}</div>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* Player Screen */}
           <div class="basis-full shrink-1 grow-1 lg:flex  flex-col-reverse gap-10 hidden relative h-[calc(100vh-56px)] p-6">

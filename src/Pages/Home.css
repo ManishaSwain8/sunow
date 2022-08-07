@@ -175,6 +175,10 @@
     
   } */
 
+  .Menubar {
+    margin-left: 0;
+  }
+
   #icons:hover {
     cursor: pointer;
     transform: scale(1.4);
