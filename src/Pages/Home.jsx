@@ -1,23 +1,27 @@
 import React from "react";
+import { Routes, Route, Router } from "react-router-dom";
 import Logobar from "../components/Navbar/Logobar";
 import Menubar from "../components/Navbar/Menubar";
 import General from "../components/Navbar/General";
-// import Footer from "../components/Navbar/Footer";
 import Main from "../components/Home/Main";
+import Search from "../components/Navbar/Search";
+import Explore from "../Pages/Explore";
 import "./Home.css";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
-    <>
-      <section className="bg-[#F4F5F7] flex">
-        <div className="Navbar">
-          <Menubar />
-          <Logobar />
-          <General />
-        </div>
-        {/* <div className="w-[80%] ">
-          <Main />
-        </div> */}
-      </section>
-    </>
+    <section className="bg-[#F4F5F7] flex">
+      <div className="Navbar">
+        <Menubar />
+        <Logobar />
+        <General />
+      </div>
+      <div className="w-[80%] ">
+        <Link to="/Explore">
+          <Explore />
+        </Link>
+        {/* <Main /> */}
+      </div>
+    </section>
   );
 }

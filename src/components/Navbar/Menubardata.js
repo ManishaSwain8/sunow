@@ -5,18 +5,17 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ListIcon from "@mui/icons-material/List";
 import AlbumIcon from "@mui/icons-material/Album";
 import PersonIcon from "@mui/icons-material/Person";
-import FiberNewIcon from "@mui/icons-material/FiberNew";
 
 export const Menubardata = [
   {
     titles: "Home",
     icons: <HomeIcon />,
-    Link: "/home",
+    Link: "/Home",
   },
   {
     titles: "Search",
     icons: <SearchIcon />,
-    Link: "/search",
+    Link: "../Pages/Explore",
   },
   {
     titles: "Likes",
