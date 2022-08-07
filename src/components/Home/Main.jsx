@@ -40,15 +40,15 @@ export default function Main() {
         {/*  */}
         <section id="player-list" className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden">
           {/* main Screen */}
-          <div className="space-y-2 xl:basis-[70%] basis-[65%] flex-none shrink-1 grow-1 overflow-y-scroll">
-            <div className="max-h-fit  p-6">
-              <h2 className="">Most Populor</h2>
+          <div className="space-y-2  xl:basis-[70%] basis-[65%] flex-none shrink-1 grow-1 overflow-y-scroll">
+            <div className="max-h-fit my-2 p-6">
+              <h2 className="font-bold text-2xl my-5">Most Populor</h2>
               <div className="" id="albumn">
                 <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">{overflowXScroll}</div>
               </div>
             </div>
 
-            <div className="max-h-fit  p-6">
+            <div className="max-h-fit mt-20 p-6">
               <h2 className="">Most Populor</h2>
               <div className="" id="albumn">
                 <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">{overflowXScroll}</div>
@@ -84,7 +84,7 @@ export default function Main() {
               <div id="box"></div>
             </div> */}
           </div>
-          <div class="bg-gray-800 w-full h-16 lg:hidden fixed bottom-0"></div>
+          <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-0 bottom-20"></div>
         </section>
       </div>
     </>

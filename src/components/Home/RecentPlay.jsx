@@ -8,7 +8,7 @@ import { GiNextButton } from "react-icons/gi";
 export default function RecentPlay() {
   return (
     <div className="basis-80 grow-1 self-stretch max-h-[500px] md:block hidden relative">
-      <div className="bg-white/50 w-full h-full shadow-xl rounded-2xl p-4 text-center">
+      <div className="bg-[#e2e2f2] w-full h-full shadow-xl rounded-2xl p-4 text-center">
         <div className="flex flex-col h-full justify-around">
           <div className="max-w-xs mx-auto">
             <img src="https://i1.sndcdn.com/artworks-3ITTy648eljqFP3e-LGDfnQ-t500x500.jpg" alt="heatwave" className="mx-auto rounded-2xl" width={250} />
