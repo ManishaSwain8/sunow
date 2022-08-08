@@ -5,6 +5,8 @@ import RecentPlay from "./RecentPlay";
 // import ListeningHistory from "./ListeningHistory";
 // import RecentPlay from "./RecentPlay";
 
+import Explore from "../../Pages/Explore";
+import { Link } from "react-router-dom";
 function OverflowXScroll({ item }) {
   return (
     //  grow-1
@@ -23,28 +25,50 @@ export default function Main() {
   const url =
     "https://media-exp1.licdn.com/dms/image/C5603AQHx3Gr967qhCA/profile-displayphoto-shrink_200_200/0/1557755310143?e=2147483647&v=beta&t=2ISmbVC3cK0Us_LfzRlQS66wLVpAgS07kWn8peYPnFw";
 
-  const overflowXScroll = mainObject.map((item, index) => <OverflowXScroll item={item} key={index} />);
+  const overflowXScroll = mainObject.map((item, index) => (
+    <OverflowXScroll item={item} key={index} />
+  ));
   return (
     <>
-      <section id="screen" className="">
-        <div id="top-nav" className="h-14 flex items-center justify-end px-6">
-          <img src={url} alt="profile" className="w-12 h-12 bg-white rounded-full" />
-          <div className="hidden sm:block">
-            <h3>Krishna Nayak</h3>
-            <h5>Premium</h5>
+      <section id="screen" className="p-5">
+        <div
+          id="top-nav"
+          className="h-14 flex items-center justify-center px-6"
+        >
+          <div className="ml-auto justify-self-center">
+            <Link to="/Explore">
+              {" "}
+              <Explore />
+            </Link>
+          </div>
+          <div className="ml-auto  justify-self-end">
+            <img
+              src={url}
+              alt="profile"
+              className="w-12 h-12 bg-white rounded-full"
+            />
+            <div className="hidden sm:block">
+              <h3>Krishna Nayak</h3>
+              <h5>Premium</h5>
+            </div>
           </div>
         </div>
       </section>
 
       <div className="">
         {/*  */}
-        <section id="player-list" className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden">
+        <section
+          id="player-list"
+          className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden"
+        >
           {/* main Screen */}
           <div className="space-y-2  xl:basis-[70%] basis-[65%] flex-none shrink-1 grow-1 overflow-y-scroll">
-            <div className="max-h-fit my-2 p-6">
+            <div className="max-h-fit my-0 p-6">
               <h2 className="font-bold text-2xl my-5">Most Populor</h2>
               <div className="" id="albumn">
-                <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">{overflowXScroll}</div>
+                <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">
+                  {overflowXScroll}
+                </div>
               </div>
             </div>
             {/* 

@@ -12,11 +12,12 @@ export const Menubardata = [
     icons: <HomeIcon />,
     Link: "/Home",
   },
-  {
-    titles: "Search",
-    icons: <SearchIcon />,
-    Link: "../Pages/Explore",
-  },
+  // {
+  //   id: "search_logo",
+  //   titles: "Search",
+  //   icons: <SearchIcon />,
+  //   Link: "/Explore",
+  // },
   {
     titles: "Likes",
     icons: <FavoriteIcon />,

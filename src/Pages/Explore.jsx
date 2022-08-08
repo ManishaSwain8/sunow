@@ -4,6 +4,7 @@
 //   return <div>Explore</div>;
 // }
 import React from "react";
+import "./Explore.css";
 import SearchIcon from "@mui/icons-material/Search";
 export default function Search() {
   return (
@@ -13,9 +14,10 @@ export default function Search() {
         type="text"
         placeholder="Artists , songs , or podcasts"
       ></input>
-      <button className="button_search">
+
+      <div className="button_search">
         <SearchIcon />
-      </button>
+      </div>
     </div>
   );
 }
