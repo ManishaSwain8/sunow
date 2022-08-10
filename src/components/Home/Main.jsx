@@ -93,6 +93,7 @@ export default function Main() {
               <div id="box"></div>
             </div> */}
           </div>
+          {/* FIXME: rebbuild the moblie recentPlay */}
           <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-0 bottom-20"></div>
         </section>
       </div>
