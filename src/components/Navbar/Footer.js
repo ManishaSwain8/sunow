@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-     <div className="footer">
-       {/* <div className="fname">
+    <div className="footer">
+      {/* <div className="fname">
          <b>GO MOBILE</b>
        </div>
        <br />
