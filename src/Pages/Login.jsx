@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
+/* eslint-disable */
 import { AiOutlineMail } from "react-icons/ai";
 import { AiFillLock } from "react-icons/ai";
 import { AiFillEyeInvisible } from "react-icons/ai";
@@ -73,6 +74,7 @@ function generateRandomString(length) {
   }
   return result;
 }
+
 /* <div className="text-center max-w-lg mx-auto mt-32 ">
       <AiFillHome />
       <div className="space-y-10 border rounded m-3 p-6">
