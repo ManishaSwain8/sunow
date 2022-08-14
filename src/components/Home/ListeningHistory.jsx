@@ -50,7 +50,12 @@ function MusicList() {
   return (
     <div className="px-3 sm:px-10 bg-white ">
       <div className="flex items-center shadow-xl shadow-slate-200 w-full mx-auto relative rounded-lg">
-        <img className="rounded-lg shadow-2xl shadow-slate-700" src="https://upload.wikimedia.org/wikipedia/en/3/3e/Themusic.themusic.albumcover.jpg" alt="iamge" width={75} />
+        <img
+          className="rounded-lg shadow-2xl shadow-slate-700"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3e/Themusic.themusic.albumcover.jpg"
+          alt="iamge"
+          width={75}
+        />
         <div className="ml-5 text-sm">
           <p>Lorem, ipsum dolor.</p>
           <p className="text-xs text-gray-400">Lorem, ipsum.</p>
