@@ -7,6 +7,14 @@ import RecentPlay from "./RecentPlay";
 
 import Explore from "../../Pages/Explore";
 import { Link } from "react-router-dom";
+
+// import { BsFillPlayCircleFill } from "react-icons/bs";
+import { GiFastBackwardButton } from "react-icons/gi";
+import { GiFastForwardButton } from "react-icons/gi";
+import { GiPreviousButton } from "react-icons/gi";
+import { GiNextButton } from "react-icons/gi";
+// import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+
 function OverflowXScroll({ item }) {
   return (
     //  grow-1
@@ -44,9 +52,9 @@ export default function Main() {
         </div>
       </section>
 
-      <div className="pt-2">
+      <div className="pt-2 ">
         {/*  */}
-        <section id="player-list" className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden">
+        <section id="player-list" className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden ">
           {/* main Screen */}
           <div className="space-y-2  xl:basis-[70%] basis-[65%] flex-none shrink-1 grow-1 overflow-y-scroll">
             <div className="max-h-fit my-0 p-6">
@@ -54,6 +62,27 @@ export default function Main() {
               <div className="" id="albumn">
                 <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">{overflowXScroll}</div>
               </div>
+              {/* 
+            <div className="max-h-fit mt-20 p-6">
+              <h2 className="">Most Populor</h2>
+              <div className="" id="albumn">
+                <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">{overflowXScroll}</div>
+              </div>
+            </div> */}
+
+              {/* <div className="max-h-fit  p-6">
+              <h2 className="">Most Populor</h2>
+              <div className="" id="albumn">
+                <div className=" snap-x flex xl:gap-20 lg:gap-16  gap-10  items-center overflow-x-scroll">{overflowXScroll}</div>
+              </div>
+            </div> */}
+
+              {/* <div className="max-h-fit  p-6">
+              <h2 className="">Most Populor</h2>
+              <div className="" id="albumn">
+                <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10  items-center overflow-x-scroll">{overflowXScroll}</div>
+              </div>
+            </div> */}
             </div>
           </div>
           {/* Player Screen */}
@@ -63,7 +92,29 @@ export default function Main() {
             </>
           </div>
           {/* FIXME: rebbuild the moblie recentPlay */}
-          <div className="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-0 bottom-20"></div>
+          <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-0 bottom-20">
+            <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-14 bottom-14  justify-evenly">
+              <div className=" mt-3.5  ">
+                <div className="w-full border-2  border-gray-400 absolute top-0 "></div>
+                <div className="w-1/2 border-2 border-orange-400 absolute top-0 "></div>
+              </div>
+
+              <div className=" ml-0% flex items-center justify-evenly ">
+                {/* <img
+                src="https://i1.sndcdn.com/artworks-3ITTy648eljqFP3e-LGDfnQ-t500x500.jpg"
+                alt="heatwave"
+                className=" ml-0pxpx"
+                width={40}
+              /> */}
+                <GiPreviousButton size={20} color="rgb(251 146 60)" />
+                <GiFastBackwardButton size={20} color="rgb(251 146 60)" />
+
+                <img src="https://i1.sndcdn.com/artworks-3ITTy648eljqFP3e-LGDfnQ-t500x500.jpg" alt="heatwave" className=" ml-0pxpx  rounded-full" width={40} />
+                <GiFastForwardButton size={20} color="rgb(251 146 60)" />
+                <GiNextButton size={20} color="rgb(251 146 60)" />
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </>

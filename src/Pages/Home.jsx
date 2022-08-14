@@ -18,7 +18,7 @@ export default function Home() {
           <General />
         </div>
       </section>
-      <div className="bg-[#F6F7FE] sm:ml-20">
+      <div className="bg-[#F6F7FE] sm:ml-0 xl:ml-20 lg:ml-20">
         <Main />
       </div>
     </>
