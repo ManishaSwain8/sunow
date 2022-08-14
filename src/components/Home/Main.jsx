@@ -92,8 +92,8 @@ export default function Main() {
             </>
           </div>
           {/* FIXME: rebbuild the moblie recentPlay */}
-          <div class="bg-gray-100 w-full h-0 lg:hidden fixed sm:bottom-0 bottom-20">
-            <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-14 bottom-14 justify-evenly">
+          <div className="bg-gray-100 w-full h-0 lg:hidden fixed sm:bottom-0 bottom-20">
+            <div className="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-14 bottom-14 justify-evenly">
               <div className="mt-3.5">
                 <div className="w-full border-2  border-gray-400 absolute top-0 "></div>
                 <div className="w-1/2 border-2 border-orange-400 absolute top-0 "></div>

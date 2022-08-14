@@ -14,7 +14,7 @@ export default function useAuth(code) {
 
   const getAccessToken = useCallback(() => {
     axios
-      .post("http://localhost:8080/api/login", { code })
+      .post("https://sunow-api.glitch.me/api/login", { code })
       .then((res) => {
         console.log(res.data);
         setAccessToken(res.data.accessToken);
@@ -36,7 +36,7 @@ export default function useAuth(code) {
 
     const interval = setInterval(() => {
       axios
-        .post("http://localhost:8080/api/refresh", { refreshToken })
+        .post("https://sunow-api.glitch.me/api/refresh", { refreshToken })
         .then((res) => {
           setAccessToken(res.data.accessToken);
           Cookies.set("spotify_access_token", Encrypt(res.data.accessToken));

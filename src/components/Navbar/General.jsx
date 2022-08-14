@@ -15,7 +15,7 @@ export default function General() {
               {Generaldata.map((val, i) => {
                 return (
                   <div key={i}>
-                    <li className="glist">
+                    <li onClick={() => val.methods()} className="glist">
                       <div id="icon">{val.icon}</div>
                       <div id="title">{val.title}</div>
                     </li>
