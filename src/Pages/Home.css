@@ -160,7 +160,48 @@
     width: 100%;
     /*left:-30%;*/
     height: 4rem;
+    position: fixed;
+    bottom: 0;
+  }
+  .menuflex {
     position: absolute;
+    top: 1rem;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+  }
+
+  .Menubar {
+    margin-left: 0;
+  }
+
+  #icons:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+    color: rgb(255, 128, 0);
+
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+
+  .Navbar:hover {
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .logoname,
+  #titles,
+  #title,
+  .logo {
+    display: none;
+  }
+
+  .Navbar {
+    background-color: rgb(226, 226, 242);
+    width: 100%;
+    /*left:-30%;*/
+    height: 4rem;
+    position: fixed;
     bottom: 0;
   }
   .menuflex {

@@ -62,11 +62,11 @@ export default function Main() {
         </div>
       </section>
 
-      <div className="pt-2">
+      <div className="pt-2 ">
         {/*  */}
         <section
           id="player-list"
-          className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden"
+          className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden "
         >
           {/* main Screen */}
           <div className="space-y-2  xl:basis-[70%] basis-[65%] flex-none shrink-1 grow-1 overflow-y-scroll">
@@ -116,9 +116,8 @@ export default function Main() {
             </div> */}
           </div>
 
-
           {/* FOR MOBILE VIEW OF ONGOING MUSIC   */}
-          <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-0 bottom-14  justify-evenly">
+          <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-14 bottom-14  justify-evenly">
             <div className=" mt-3.5  ">
               <div className="w-full border-2  border-gray-400 absolute top-0 "></div>
               <div className="w-1/2 border-2 border-orange-400 absolute top-0 "></div>
@@ -144,7 +143,6 @@ export default function Main() {
               <GiNextButton size={20} color="rgb(251 146 60)" />
             </div>
           </div>
-
         </section>
       </div>
     </>
