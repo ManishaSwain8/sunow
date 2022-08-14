@@ -1,4 +1,5 @@
 //import logo from "./assets/images/logo.svg";
+/* eslint-disable */
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -10,13 +11,11 @@ import SignUp from "./Pages/SignUp";
 import Login from "./Pages/Login";
 import Error from "./Pages/Error";
 import PrivateRoutes from "./libs/PrivateRoutes.js";
-// import { Cookie } from "@mui/icons-material";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/home" element={<PrivateRoutes Component={Home} />} /> */}
         <Route path="/login" element={<Login />} />
         <Route element={<PrivateRoutes />}>
           <Route path="/" element={<Home />} />

@@ -1,10 +1,6 @@
 /* eslint-disable */
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useState, useMemo } from "react";
-import Home from "./Home";
-import useAuth from "../libs/useAuth";
-import Dashboard from "./Dashboard";
 import valid from "../libs/useAuth";
 
 function generateRandomString(length) {

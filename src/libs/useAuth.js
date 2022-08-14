@@ -1,13 +1,16 @@
+/* eslint-disable */
 import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
-import { Encrypt } from "./EncodeData";
+import { Encrypt, Decrypt } from "./EncodeData";
+import { useNavigate } from "react-router-dom";
 
 export default function useAuth(code) {
   //   console.log(code);
   const [accessToken, setAccessToken] = useState(null);
   const [refreshToken, setRefreshToken] = useState(null);
   const [expiresIn, setExpiresIn] = useState(null);
+  const navigate = useNavigate();
 
   const getAccessToken = useCallback(() => {
     axios
@@ -17,13 +20,12 @@ export default function useAuth(code) {
         setAccessToken(res.data.accessToken);
         setRefreshToken(res.data.refreshToken);
         setExpiresIn(res.data.expiresIn);
-        // setExpiresIn(res.data.expiresIn);
         Cookies.set("spotify_access_token", Encrypt(res.data.accessToken));
-        window.location = "/";
+        navigate("/");
       })
       .catch((e) => {
-        console.log(e);
-        window.location = "/login";
+        console.warn(e);
+        navigate("/login");
       });
   }, [code]);
 
@@ -36,8 +38,8 @@ export default function useAuth(code) {
       axios
         .post("http://localhost:8080/api/refresh", { refreshToken })
         .then((res) => {
-          // console.log(res.data);
           setAccessToken(res.data.accessToken);
+          Cookies.set("spotify_access_token", Encrypt(res.data.accessToken));
           setExpiresIn(res.data.expiresIn);
           console.log("refreshAccessToken");
         })

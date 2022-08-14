@@ -1,11 +1,8 @@
 import Cookies from "js-cookie";
 import React, { useState, useEffect } from "react";
-import { Outlet, Navigate, useNavigate } from "react-router-dom";
+import { Outlet, Navigate } from "react-router-dom";
 
-const PrivateRoutes = ({}) => {
-  console.log(Cookies.get("spotify_access_token"));
-  const navigate = useNavigate();
-  // use;
+const PrivateRoutes = () => {
   const [isToken, setIsToken] = useState(true);
   useEffect(() => {
     if (Cookies.get("spotify_access_token") === undefined) {
