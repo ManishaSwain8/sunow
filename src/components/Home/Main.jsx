@@ -92,20 +92,14 @@ export default function Main() {
             </>
           </div>
           {/* FIXME: rebbuild the moblie recentPlay */}
-          <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-0 bottom-20">
-            <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-14 bottom-14  justify-evenly">
-              <div className=" mt-3.5  ">
+          <div class="bg-gray-100 w-full h-0 lg:hidden fixed sm:bottom-0 bottom-20">
+            <div class="bg-gray-800 w-full h-16 lg:hidden fixed sm:bottom-14 bottom-14 justify-evenly">
+              <div className="mt-3.5">
                 <div className="w-full border-2  border-gray-400 absolute top-0 "></div>
                 <div className="w-1/2 border-2 border-orange-400 absolute top-0 "></div>
               </div>
 
-              <div className=" ml-0% flex items-center justify-evenly ">
-                {/* <img
-                src="https://i1.sndcdn.com/artworks-3ITTy648eljqFP3e-LGDfnQ-t500x500.jpg"
-                alt="heatwave"
-                className=" ml-0pxpx"
-                width={40}
-              /> */}
+              <div className="ml-0 flex items-center justify-evenly ">
                 <GiPreviousButton size={20} color="rgb(251 146 60)" />
                 <GiFastBackwardButton size={20} color="rgb(251 146 60)" />
 
