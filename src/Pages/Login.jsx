@@ -14,9 +14,8 @@ function generateRandomString(length) {
 }
 
 const Login = () => {
-  // const code = useMemo(() => new URLSearchParams(window.location.search).get("code"), []);
   const code = new URLSearchParams(window.location.search).get("code");
-  // window.history.pushState({}, null, "/");
+
   const navigate = useNavigate();
 
   const onLoginHandler = () => {

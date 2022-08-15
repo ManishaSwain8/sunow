@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Generaldata } from "./Generaldata";
 export default function General() {
   return (
