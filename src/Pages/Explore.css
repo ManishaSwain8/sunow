@@ -4,23 +4,72 @@
   position: relative;
 }
 .text_bar {
-  width: 600px;
+  width: 700px;
   border: none;
+  margin-top: 1rem;
   border-radius: 25px;
   padding: 0.5rem;
   text-align: center;
   border-color: rgb(244, 244, 251);
   border-style: solid;
+  box-shadow: 9px 9px 7px #b9b8b8;
 }
 .button_search {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   left: 30px;
   font-size: 1rem;
   color: rgb(246, 111, 27);
 }
+.close {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  right: 30px;
+  font-size: 1rem;
+  color: rgb(246, 111, 27);
+}
+.result {
+  height: 425px;
+  width: 1000px;
+  /* background-color: #e2e2f2; */
+  background-color: #e2e2f2;
+  position: relative;
+  margin-top: 20rem;
+  border-radius: 15px;
+  box-shadow: 9px 9px 7px #b9b8b8;
+}
 
+.text_bar1 {
+  width: 800px;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 25px;
+  margin-left: 6rem;
+  padding: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  border-color: rgb(244, 244, 251);
+  border-style: solid;
+  box-shadow: 9px 9px 7px #b9b8b8;
+}
+.button_search1 {
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  left: 140px;
+  font-size: 1rem;
+  color: rgb(246, 111, 27);
+}
+.close1 {
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  right: 140px;
+  font-size: 1rem;
+  color: rgb(246, 111, 27);
+}
 @media only screen and (max-width: 640px) {
   .search {
     align-items: center;
@@ -47,4 +96,68 @@
     font-size: 16px;
     color: rgb(246, 111, 27);
   }
+}
+@media only screen and (max-width: 1024px) {
+  .search {
+    align-items: center;
+  }
+
+  .text_bar {
+    width: 450px;
+    height: 60px;
+    border: none;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    padding-left: 3rem;
+    border-color: rgb(244, 244, 251);
+    border-style: solid;
+  }
+}
+iframe {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  background: black;
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  border-radius: 5px;
+  top: 10px;
+  border: 1px solid white;
+}
+
+.fa-solid {
+  color: white;
+  margin-top: 6.5px;
+  margin-left: 11px;
+}
+
+.left {
+  right: 150px;
+}
+
+.right {
+  right: 110px;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.super_container {
+  margin-bottom: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
