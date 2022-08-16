@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { GiFastBackwardButton } from "react-icons/gi";
