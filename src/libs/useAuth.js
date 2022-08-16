@@ -5,6 +5,17 @@ import Cookies from "js-cookie";
 import { Encrypt, Decrypt } from "./EncodeData";
 import { useNavigate } from "react-router-dom";
 
+import SyncLoader from "react-spinners/SyncLoader";
+
+const styles = {
+  center: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
+
 export default function useAuth(code) {
   //   console.log(code);
   const [accessToken, setAccessToken] = useState(null);
@@ -61,5 +72,9 @@ export default function useAuth(code) {
     // refreshAccessToken();
   }, [refreshToken, expiresIn]);
 
-  // return accessToken ? accessToken : null;
+  return (
+    <div style={styles.center}>
+      <SyncLoader />
+    </div>
+  );
 }
