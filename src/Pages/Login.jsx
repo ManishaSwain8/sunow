@@ -1,6 +1,4 @@
-/* eslint-disable */
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import valid from "../libs/useAuth";
 
 function generateRandomString(length) {
@@ -15,8 +13,6 @@ function generateRandomString(length) {
 
 const Login = () => {
   const code = new URLSearchParams(window.location.search).get("code");
-
-  const navigate = useNavigate();
 
   const onLoginHandler = () => {
     var state = generateRandomString(16);
