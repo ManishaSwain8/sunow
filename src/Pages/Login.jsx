@@ -24,7 +24,9 @@ const Login = () => {
     window.location.href =
       "https://accounts.spotify.com/authorize?response_type=code&client_id=" +
       client_ID +
-      "&scope=user-read-private%20user-read-email&redirect_uri=http://localhost:3000/login&state=" +
+      "&scope=user-read-private%20user-read-email&redirect_uri=" +
+      process.env.REACT_APP_CALLBACK_URL +
+      "&state=" +
       state;
   };
 
