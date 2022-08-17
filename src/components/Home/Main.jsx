@@ -38,16 +38,16 @@ export default function Main() {
     <>
       <section id="screen" className="p-0">
         <div id="top-nav" className="h-14 flex items-center justify-center px-6">
-          <div className="lg:ml-auto justify-self-center">
+          <div className="">
             <Explore />
           </div>
-          <div className="ml-auto lg:flex justify-self-end hidden">
+          {/* <div className="ml-auto lg:flex justify-self-end hidden">
             <img src={url} alt="profile" className="w-12 h-12 bg-white rounded-full" />
             <div className="hidden sm:block">
               <h3>Krishna Nayak</h3>
               <h5>Premium</h5>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -55,7 +55,8 @@ export default function Main() {
         {/*  */}
         <section id="player-list" className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden ">
           {/* main Screen */}
-          <div className="space-y-2  xl:basis-[70%] basis-[65%] flex-none shrink-1 grow-1 overflow-y-scroll">
+          {/* xl:basis-[70%] basis-[65%] */}
+          <div className="space-y-2   flex-none shrink grow-2 overflow-y-scroll">
             <div className="max-h-fit my-0 p-6">
               <h2 className="font-bold text-2xl my-5">Most Populor</h2>
               <div className="" id="albumn">
@@ -65,7 +66,8 @@ export default function Main() {
             </div>
           </div>
           {/* Player Screen */}
-          <div className="basis-full shrink-1 grow-1 lg:flex  flex-col-reverse gap-10 hidden relative h-[calc(100vh-56px)] p-6">
+          {/* basis-full */}
+          <div className=" shrink grow-0 lg:flex  flex-col-reverse gap-10 hidden relative h-[calc(100vh-56px)] p-6">
             <>
               <RecentPlay />
             </>

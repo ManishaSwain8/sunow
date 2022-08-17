@@ -7,6 +7,7 @@ import CloseIcon from "@mui/icons-material/Close";
 export default function Search() {
   const [show, setShow] = useState(false);
 
+  // TODO: For focus on resposive srarch bar
   return (
     <div className="search mx-auto">
       <div className="relative text-center">
@@ -18,6 +19,8 @@ export default function Search() {
           <CloseIcon size={30} />
         </button>
       </div>
+
+      {/* TODO: AFTER completing of resposive search bar then FOCUS on how you want tho show search bar */}
 
       {/* {show && (
         <div className="result">
