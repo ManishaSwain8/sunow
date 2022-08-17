@@ -16,13 +16,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
         <Route element={<PrivateRoutes />}>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/library" element={<Library />} />
           <Route path="/profile" element={<Profile />} />
         </Route>
+        <Route path="/login" element={<Login />} />
         <Route path="/on-boarding" element={<OnBoarding />} />
         <Route path="*" element={<Error />} />
       </Routes>

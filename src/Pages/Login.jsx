@@ -1,6 +1,4 @@
-/* eslint-disable */
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import valid from "../libs/useAuth";
 
 function generateRandomString(length) {
@@ -16,15 +14,15 @@ function generateRandomString(length) {
 const Login = () => {
   const code = new URLSearchParams(window.location.search).get("code");
 
-  const navigate = useNavigate();
-
   const onLoginHandler = () => {
     var state = generateRandomString(16);
     const client_ID = "6fd8c90cbcb24e94a3da31eb7e7d0866";
     window.location.href =
       "https://accounts.spotify.com/authorize?response_type=code&client_id=" +
       client_ID +
-      "&scope=user-read-private%20user-read-email&redirect_uri=http://localhost:3000/login&state=" +
+      "&scope=user-read-private%20user-read-email&redirect_uri=" +
+      process.env.REACT_APP_CALLBACK_URL +
+      "&state=" +
       state;
   };
 

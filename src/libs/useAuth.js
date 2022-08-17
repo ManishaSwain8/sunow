@@ -25,7 +25,7 @@ export default function useAuth(code) {
 
   const getAccessToken = useCallback(() => {
     axios
-      .post("https://sunow-api.glitch.me/api/login", { code })
+      .post(process.env.REACT_APP_API_ENDPOINT + "/api/login", { code })
       .then((res) => {
         console.log(res.data);
         setAccessToken(res.data.accessToken);
@@ -47,7 +47,7 @@ export default function useAuth(code) {
 
     const interval = setInterval(() => {
       axios
-        .post("https://sunow-api.glitch.me/api/refresh", { refreshToken })
+        .post(process.env.REACT_APP_API_ENDPOINT + "/api/refresh", { refreshToken })
         .then((res) => {
           setAccessToken(res.data.accessToken);
           Cookies.set("spotify_access_token", Encrypt(res.data.accessToken));
@@ -69,12 +69,12 @@ export default function useAuth(code) {
   }, [code]);
 
   useEffect(() => {
-    // refreshAccessToken();
+    refreshAccessToken();
   }, [refreshToken, expiresIn]);
 
   return (
     <div style={styles.center}>
-      <SyncLoader />
+      <SyncLoader color="#F56F1A" />
     </div>
   );
 }
