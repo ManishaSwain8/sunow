@@ -96,6 +96,16 @@
     font-size: 16px;
     color: rgb(246, 111, 27);
   }
+  .result {
+    height: 225px;
+    width: 500px;
+    /* background-color: #e2e2f2; */
+    background-color: #e2e2f2;
+    position: relative;
+    margin-top: 20rem;
+    border-radius: 15px;
+    box-shadow: 9px 9px 7px #b9b8b8;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .search {
@@ -117,10 +127,9 @@
   }
 }
 iframe {
-  width: 350px;
-  height: 450px;
+  width: 310px;
+  height: 410px;
   border-radius: 10px;
-  margin: 0 auto;
 }
 
 .box {
@@ -142,11 +151,11 @@ iframe {
 }
 
 .left {
-  right: 150px;
+  right: 160px;
 }
 
 .right {
-  right: 110px;
+  right: 130px;
 }
 
 .container {
