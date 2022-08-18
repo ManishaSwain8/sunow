@@ -68,7 +68,8 @@ export default function Main() {
           className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden "
         >
           {/* main Screen */}
-          <div className="space-y-2  xl:basis-[70%] basis-[65%] flex-none shrink-1 grow-1 overflow-y-scroll">
+          {/* xl:basis-[70%] basis-[65%] */}
+          <div className="space-y-2   flex-none shrink grow-2 overflow-y-scroll">
             <div className="max-h-fit my-0 p-6">
               <h2 className="font-bold text-2xl my-5">Most Populor</h2>
               <div className="" id="albumn">
@@ -80,7 +81,8 @@ export default function Main() {
             </div>
           </div>
           {/* Player Screen */}
-          <div className="basis-full shrink-1 grow-1 lg:flex  flex-col-reverse gap-10 hidden relative h-[calc(100vh-56px)] p-6">
+          {/* basis-full */}
+          <div className=" shrink grow-0 lg:flex  flex-col-reverse gap-10 hidden relative h-[calc(100vh-56px)] p-6">
             <>
               <RecentPlay />
             </>

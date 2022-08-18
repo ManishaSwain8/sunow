@@ -6,6 +6,7 @@ import DropBox from "../Explore/DropBox";
 
 export default function Search() {
   const [show, setShow] = useState(false);
+
   return (
     <div className="search mx-auto">
       <input
