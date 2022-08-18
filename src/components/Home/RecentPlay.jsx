@@ -5,6 +5,7 @@ import { GiFastBackwardButton } from "react-icons/gi";
 import { GiFastForwardButton } from "react-icons/gi";
 import { GiPreviousButton } from "react-icons/gi";
 import { GiNextButton } from "react-icons/gi";
+import "./Main.css";
 
 /*export default function RecentPlay() {
   return (
@@ -52,16 +53,21 @@ import { GiNextButton } from "react-icons/gi";
 }*/
 export default function RecentPlay() {
   return (
-    <div class="">
-      <div class="">
+    <div class="super_container">
+      <div class="container">
         <iframe
-          className="w-[400px]  aspect-square"
           src="https://open.spotify.com/embed?uri=spotify:track:2kxQjpmDPCFX2RWfMIuYDi"
           width="400"
           height="400"
           frameborder="0"
           allow="encrypted-media"
         ></iframe>
+        <div class="box left">
+          <i class="fa-solid fa-backward-step"></i>
+        </div>
+        <div class="box right">
+          <i class="fa-solid fa-forward-step"></i>
+        </div>
       </div>
     </div>
   );
