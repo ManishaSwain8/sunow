@@ -9,7 +9,7 @@ export default function Search() {
 
   // TODO: For focus on resposive srarch bar
   return (
-    <div className="search mx-auto">
+    <div className="search">
       <div className="relative text-center">
         <input onClick={() => setShow(true)} className="text_bar" type="text" placeholder="Dive in!" />
         <div className="button_search">
