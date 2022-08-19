@@ -43,7 +43,7 @@ export default function Main() {
             <Explore />
           </div>
           <div className="ml-auto lg:flex justify-self-end hidden">
-            <img src={url} alt="profile" className="w-12 h-12 bg-white rounded-full " />
+            <img src={url} alt="profile" className="w-12 h-12 bg-white rounded-full" />
             <div className="hidden sm:block">
               <h3>Krishna Nayak</h3>
               <h5>Premium</h5>
