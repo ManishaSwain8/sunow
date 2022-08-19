@@ -39,9 +39,13 @@
   position: absolute;
   top: 1.7rem;
   font-size: 2rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin-left: 6rem;
-  color: rgb(240, 128, 7);
+  color: rgb(255, 128, 0);
+  /* font-weight: 600;
+  text-shadow: 0 0 10px #ffa500, 0 0 20px #ffa500, 0 0 20px #ffa500,
+    0 0 20px #ffa500, 0 0 20px #ffa500; */
 }
 .logo {
   height: 2.3rem;
@@ -95,13 +99,15 @@
 }
 .menuname {
   font-size: 1rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin-left: 6%;
   margin-left: 0rem;
 }
 .gname {
   font-size: 1rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin-left: 6%;
   margin-left: 0rem;
 }
@@ -131,7 +137,7 @@
   cursor: pointer;
   transform: scale(1.05);
   color: rgb(255, 128, 0);
-  background: rgb(218, 218, 235);
+
   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
   background: rgba(209, 209, 225, 0.952);
 }
@@ -162,7 +168,7 @@
   }
   .menuflex {
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     justify-content: space-around;
     width: 100%;
     display: flex;
@@ -203,7 +209,7 @@
   }
   .menuflex {
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     justify-content: space-around;
     width: 100%;
     display: flex;
