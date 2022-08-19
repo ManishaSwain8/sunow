@@ -51,7 +51,7 @@ export default function Main() {
             <img
               src={url}
               alt="profile"
-              className="w-12 h-12 bg-white rounded-full"
+              className="w-12 h-12 bg-white rounded-full "
             />
             <div className="hidden sm:block">
               <h3>Krishna Nayak</h3>
