@@ -1,5 +1,5 @@
-/* Hide scrollbar for Chrome, Safari and Opera */
-#chartBox::-webkit-scrollbar {
+Hide scrollbar for Chrome,
+Safari and Opera #chartBox::-webkit-scrollbar {
   display: none;
   /*   scrollbar-width: thin; */
 }
@@ -9,8 +9,6 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-/*Overal css of navbar*/
 
 * {
   margin: 0%;
@@ -24,7 +22,7 @@
   transition: 0.5s;
   overflow: hidden;
   width: 5rem;
-  /*left:-30%;*/
+
   left: 0;
 }
 .Navbar:hover {
@@ -41,7 +39,7 @@
   font-size: 2rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin-left: 6rem;
-  color: rgb(240, 128, 7);
+  color: rgb(255, 128, 0);
 }
 .logo {
   height: 2.3rem;
@@ -53,7 +51,6 @@
 }
 
 .logo:hover {
-  /*transform: scale(1.1);*/
   transform: rotate(360deg);
 }
 
@@ -131,7 +128,7 @@
   cursor: pointer;
   transform: scale(1.05);
   color: rgb(255, 128, 0);
-  background: rgb(218, 218, 235);
+
   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
   background: rgba(209, 209, 225, 0.952);
 }
@@ -155,14 +152,14 @@
   .Navbar {
     background-color: rgb(226, 226, 242);
     width: 100%;
-    /*left:-30%;*/
+
     height: 4rem;
     position: fixed;
     bottom: 0;
   }
   .menuflex {
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     justify-content: space-around;
     width: 100%;
     display: flex;
@@ -185,6 +182,7 @@
     transition: all 0.5s ease;
   }
 }
+
 @media only screen and (max-width: 1023px) {
   .logoname,
   #titles,
@@ -196,14 +194,14 @@
   .Navbar {
     background-color: rgb(226, 226, 242);
     width: 100%;
-    /*left:-30%;*/
+
     height: 4rem;
     position: fixed;
     bottom: 0;
   }
   .menuflex {
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     justify-content: space-around;
     width: 100%;
     display: flex;

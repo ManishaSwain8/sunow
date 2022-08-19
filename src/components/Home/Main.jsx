@@ -34,25 +34,16 @@ export default function Main() {
   const url =
     "https://media-exp1.licdn.com/dms/image/C5603AQHx3Gr967qhCA/profile-displayphoto-shrink_200_200/0/1557755310143?e=2147483647&v=beta&t=2ISmbVC3cK0Us_LfzRlQS66wLVpAgS07kWn8peYPnFw";
 
-  const overflowXScroll = mainObject.map((item, index) => (
-    <OverflowXScroll item={item} key={index} />
-  ));
+  const overflowXScroll = mainObject.map((item, index) => <OverflowXScroll item={item} key={index} />);
   return (
     <>
       <section id="screen" className="p-0">
-        <div
-          id="top-nav"
-          className="h-14 flex items-center justify-center px-6"
-        >
+        <div id="top-nav" className="h-14 flex items-center justify-center px-6">
           <div className="lg:ml-auto justify-self-center">
             <Explore />
           </div>
           <div className="ml-auto lg:flex justify-self-end hidden">
-            <img
-              src={url}
-              alt="profile"
-              className="w-12 h-12 bg-white rounded-full"
-            />
+            <img src={url} alt="profile" className="w-12 h-12 bg-white rounded-full " />
             <div className="hidden sm:block">
               <h3>Krishna Nayak</h3>
               <h5>Premium</h5>
@@ -63,19 +54,14 @@ export default function Main() {
 
       <div className="pt-2 ">
         {/*  */}
-        <section
-          id="player-list"
-          className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden "
-        >
+        <section id="player-list" className="lg:flex justify-between h-[calc(100vh-56px)] overflow-y-hidden ">
           {/* main Screen */}
           {/* xl:basis-[70%] basis-[65%] */}
           <div className="space-y-2   flex-none shrink grow-2 overflow-y-scroll">
             <div className="max-h-fit my-0 p-6">
               <h2 className="font-bold text-2xl my-5">Most Populor</h2>
               <div className="" id="albumn">
-                <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">
-                  {overflowXScroll}
-                </div>
+                <div className=" snap-x flex xl:gap-20 lg:gap-16 gap-10 items-center overflow-x-scroll">{overflowXScroll}</div>
               </div>
               {/* TODO: ADD LIST of items */}
             </div>
@@ -113,12 +99,7 @@ export default function Main() {
           <div className="xl:hidden lg:hidden ">
             <div class="super_container1">
               <div class="container1">
-                <iframe
-                  id="dup_frame"
-                  src="https://open.spotify.com/embed?uri=spotify:track:2kxQjpmDPCFX2RWfMIuYDi"
-                  frameborder="0"
-                  allow="encrypted-media"
-                ></iframe>
+                <iframe id="dup_frame" src="https://open.spotify.com/embed?uri=spotify:track:2kxQjpmDPCFX2RWfMIuYDi" frameBorder="0" allow="encrypted-media"></iframe>
                 <div class="box left1">
                   <i class="fa-solid fa-backward-step"></i>
                 </div>

@@ -55,13 +55,7 @@ export default function RecentPlay() {
   return (
     <div class="super_container">
       <div class="container">
-        <iframe
-          src="https://open.spotify.com/embed?uri=spotify:track:2kxQjpmDPCFX2RWfMIuYDi"
-          width="400"
-          height="400"
-          frameborder="0"
-          allow="encrypted-media"
-        ></iframe>
+        <iframe src="https://open.spotify.com/embed/artist/5Rl15oVamLq7FbSb0NNBNy?utm_source=generator" width="400" height="400" frameBorder="0" allow="encrypted-media"></iframe>
         <div class="box left">
           <i class="fa-solid fa-backward-step"></i>
         </div>

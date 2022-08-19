@@ -42,11 +42,10 @@ iframe {
   align-items: center;
   min-height: 100vh;
 }
-/* ---------------------------------------------------------------------------------------- */
 #dup_frame {
   width: 100vw;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 0px;
   margin-bottom: 14rem;
   margin-left: 0px;
 }
